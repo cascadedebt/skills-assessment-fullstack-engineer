@@ -9,7 +9,7 @@
 
 :clap: A sincere congratulations on progressing your candidacy for the Full-Stack Engineer role at Cascade Debt! This role is essential for building and integrating how users interact with their own data artifacts. Your duties will largely cover design, implementation, and development of Cascade's UI and API. As such, we'd love for you to show off your front-end and dev-ops skillsets to us! :sunglasses:
 
-For this final assessment, we ask you to please build and containerise a very simple React app addressing the problem below. Ensure that: (a) you have it cloned to a git-based sharable public repository, (b) you have a README.md file in the repository's root discussing your technical design and choices, and (c) you have a working Dockerfile to container and host your app. You may use your preference for the app's framework (e.g. Express, Nest, Meteor, Koa), however it should be in TypeScript.
+For this assessment, you will create a simple React app addressing the problem outlined below - your work should be offered as a zipped up solution - described in further detail at the end of this page.
 
 ---
 
@@ -24,14 +24,14 @@ For this final assessment, we ask you to please build and containerise a very si
   </tr>
 </table>
 
-The French government has recently contracted your firm to build a language training app for their "visiting American friends".
+We've been contracted to build a language training app for people learning French.
 
 1. Name your app - give it a nice little splash page with a "GO!" button. 
 
-2. After pressing "GO!", change the state of the button to "GRADE" (see step #4) below. 
+2. After pressing "GO!", change the state of the button to "GRADE" (see steps below for its purpose). 
 
-3. Also, after pressing "GO!", your app must scramble the following key-value dictionary: 
-<table align='center'>
+3. Also, after pressing "GO!", your app must scramble the following key-value pairs: 
+  <table align='center'>
     <tr>
         <th> English Word </th><th> French Word </th>
     </tr><tr>
@@ -59,21 +59,22 @@ The French government has recently contracted your firm to build a language trai
     </tr><tr>
         <td>limestone</td><td>calcaire</td>
     </tr>
-</table>
+  </table>
 
-After randomising, use React components to present the key-value scramble into two separated columns - something like this: 
-<p align='center'>
+   Once randomized, use React components to present the key-value scramble in two separated columns - something like this: 
+   <p align='center'>
 <img src="assets/wordColumns.png" alt="Columns" width=350px/>
 </p>
 
-3. The goal of this app is then for the user to match the English words to the French words. Build and implement a user-interaction component that does so: e.g. a drag line or similar. As an example, something like this: 
+4. The goal of this app is for the user to match English words and their French counterparts. Build and implement a user-interaction component to that end - you have flexibility to implement a solution you think is appropriate. For example, the following image shows dragging lines to link up cells from one column to the next: 
 <p align='center'>
 <img src="assets/columnMap.gif" alt="Column Map" width=350px/>
 </p>
 
-4. Upon user click on the "GRADE" button: (a) display the total percentage correct, (b) changes "GRADE" to "GO!" - e.g. reset back to Step #2.
+5. Upon user clicking the "GRADE" button: 
+ * display the total percentage correct
+ * change "GRADE" to "GO!" (reset to initial app state)
 
-5. [Dockerise your build so all your package dependencies are addressed](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/) - please include the `Dockerfile` in your submission, as well as your `docker run` command to launch your app.
 
 ---
 
@@ -81,8 +82,8 @@ After randomising, use React components to present the key-value scramble into t
 
 - **Ensure that your project runs fully BEFORE submission!**
 
-- Verify that you have dockerised your app, and you are confident with your deploy. 
+- include a `README.md` file with instructions to build and run the app. Be sure to document any requirements (assume developers reading this could be running on Windows, Mac, or Linux workstations)
 
-- Push and merge into your git repository's main branch.
+- Compress your files for submission - if a git repository, feel free to include history in the zip/gzip.
 
-- Submit your project's git repository URL to either the Rippling comms channel or via email to `parham@cascadedebt.com`.
+- Submit your project via email to `parham@cascadedebt.com`.  Alternatively, you can also upload it to Google Drive, One Drive, Dropbox, Box - any file sharing service, so long as a link is included in the email.
