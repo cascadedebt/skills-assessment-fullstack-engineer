@@ -85,4 +85,4 @@ After randomising, use React components to present the key-value scramble into t
 
 - Push and merge into your git repository's main branch.
 
-- Submit your project's git repository URL to either the Rippling comms channel or via email to `assessments@cascadedebt.com`.
+- Submit your project's git repository URL to either the Rippling comms channel or via email to `parham@cascadedebt.com`.
